@@ -1,3 +1,16 @@
+//CREACION MAPA DE UBICACION DE TIENDA :P 
+
+function iniciarMap(){
+  var coord = {lat:-33.500152448787674 ,lng: -70.61602453553553};
+  var map = new google.maps.Map(document.getElementById('mapa'),{
+    zoom: 15,
+    center: coord
+  });
+  var marker = new google.maps.Marker({
+    position: coord,
+    map: map
+  });
+}
 let mybutton = document.getElementById("btn-back-to-top");
 
 // Al bajar 20px la pag aparecera el boton.
@@ -22,6 +35,8 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
 
 //RELOJ DIGITAL TIME
 
